@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-text">Приглашение на свадьбу</div>
+        <div class="couple-text">Мадияр и Айдана</div>
+        <div class="date-text">17-05-2025</div>
+    </div>
+    <div class="event-info">
+        <h1>Дорогие гости!</h1>
+        <p style="font-size: 28px;">Мы верим, что этот день станет прекрасным началом долгого и счастливого пути. Будем рады разделить с вами нашу радость и создать вместе теплые воспоминания!</p>
+        <p style="font-size: 28px; margin-top: 30px;">Чтобы вы могли полностью насладиться праздником и провести время в уютной обстановке, мы просим вас оставить детей дома.</p>
+    </div>
+    <h1 style="color: #ffffff; margin-bottom: 0; margin-top: 150px;">Май</h1>
+    <table class="calendar">
+        <tr>
+            <th>Пн</th><th>Вт</th><th>Ср</th><th>Чт</th><th>Пт</th><th>Сб</th><th>Вс</th>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td>
+        </tr>
+        <tr>
+            <td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
+        </tr>
+        <tr>
+            <td>12</td><td>13</td><td>14</td><td>15</td><td>16</td>
+            <td class="highlight">17</td><td>18</td>
+        </tr>
+        <tr>
+            <td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
+        </tr>
+        <tr>
+            <td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td>
+        </tr>
+    </table>
+    <div class="countdown-container">
+        <div class="countdown">
+            <div class="countdown-box">
+                <span id="days">00</span>
+                <span>дней</span>
+            </div>
+            <div class="countdown-box">
+                <span id="hours">00</span>
+                <span>часов</span>
+            </div>
+            <div class="countdown-box">
+                <span id="minutes">00</span>
+                <span>минут</span>
+            </div>
+            <div class="countdown-box">
+                <span id="seconds">00</span>
+                <span>секунд</span>
+            </div>
+        </div>
+    </div>
+    <div class="event-info">
+        <h2>Дата мероприятия</h2>
+        <p style="font-size: 23px;">17-05-2025</p>
+        <h2>Тайминг</h2>
+        <p style="font-size: 23px;">15:30 | сбор гостей</p> 
+        <p style="font-size: 23px;">16:00 | начало церемонии</p>   
+        <p style="font-size: 23px;">16:30 | начало торжества</p>
+        <h2>Адрес мероприятия</h2>
+        <p style="font-size: 23px;">г. Астана,<br>проспект Туран, 27<br>"Portofino"</p>
+        <button onclick="window.open('https://2gis.kz/astana/firm/70000001022291208?m=71.409194%2C51.140698%2F16')">Открыть в 2GIS</button>
+    </div>
+    <h3>Подтвердите своё присутствие</h3>
+    <div class="rsvp-form">
+        <input type="text" id="firstName" placeholder="Имя Фамилия (+супруга/супруг)" required>
+       
+        <div class="rsvp-buttons">
+            <button class="yes" onclick="submitRSVP('pridu')">Приду</button>
+            <button class="no" onclick="submitRSVP('nepridu')">Не приду</button>
+        </div>
+
+    </div>
+    
+    <script>
+        function startCountdown(eventDate) {
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const distance = eventDate - now;
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                document.getElementById('days').innerText = days.toString().padStart(2, '0');
+                document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
+            }
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        }
+        startCountdown(new Date('2025-05-17T15:30:00').getTime());
+    </script>
+    <script>
+        async function submitRSVP(status) {
+            const firstName = document.getElementById('firstName').value.trim();
+            
+            if (!firstName) {
+                alert('Введите имя и фамилию');
+                return;
+            }
+
+            const response = await fetch('/rsvp', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ firstName, status })
+            });
+
+            const result = await response.text();
+            alert(result);
+        }
+    </script>
+</body>
+</html>
