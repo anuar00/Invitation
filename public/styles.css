@@ -32,6 +32,7 @@ body {
     font-weight: bold;
     font-size: 88px;
     margin-top: 350px;
+    margin-bottom: 350px;
 }
 
 .couple-text {
@@ -259,7 +260,7 @@ h3 {
 
 .calendar th {
     padding: 12px;
-    background: #d63384;
+    background: #f189b9;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -279,12 +280,12 @@ h3 {
 }
 
 .calendar td:hover {
-    background: #fa72b6;
+    background: #ffc6f7;
     transform: scale(1.1);
 }
 
 .highlight {
-    background: #d63384;    
+    background: #f189b9;
     color: #ffffff;
     font-weight: bold;
     border: none;
