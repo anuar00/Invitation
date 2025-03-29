@@ -15,7 +15,10 @@ body {
     background-image: url('/bg2.jpg');
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center; 
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
 }
 
 .font {
@@ -323,6 +326,11 @@ h3 {
 
 /* Общие стили для мобильных устройств */
 @media (max-width: 1024px) {
+    body {
+        background-size: 200% auto;
+        background-attachment: fixed;
+    }
+    
     .header-text {
         font-size: 60px;
         margin-top: 5px;
@@ -416,6 +424,10 @@ h3 {
 
 /* Адаптация для экранов до 600px (мобильные) */
 @media (max-width: 600px) {
+    body {
+        background-size: 388% auto;
+        background-attachment: fixed;
+    }
     .header-text {
         font-size: 3rem;
         margin-top: 5px;
@@ -509,4 +521,11 @@ h3 {
         font-size: 14px;
         font-family: 'NewFont', sans-serif;
     }
+
+    body {
+        background-size: 388% auto;
+        background-attachment: fixed;
+    }
 }
+
+
