@@ -18,6 +18,7 @@ body {
     background-position: center center; 
     background-repeat: no-repeat;
     -webkit-background-size: fixed;
+    -webkit-background-attachment: fixed;
     -moz-background-size: fixed;
 }
 
