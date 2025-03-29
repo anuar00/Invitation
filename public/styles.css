@@ -1,5 +1,14 @@
+@font-face {
+    font-family: 'NewFont';
+    src: url('fonts/NewFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 body {
-    font-family: 'Monotype Corsiva', cursive;
+    font-family: 'NewFont', sans-serif;
     text-align: center;
     background: #f8f1f1;
     color: #333;
@@ -10,7 +19,7 @@ body {
 }
 
 .font {
-    font-family: 'Monotype Corsiva';
+    font-family: 'NewFont', sans-serif;
 }
 
 
@@ -26,7 +35,7 @@ body {
 }
 
 .header-text{
-    font-family: 'Monotype Corsiva', cursive;
+    font-family: 'NewFont', sans-serif;
     position: static;
     transform: none;
     font-weight: bold;
@@ -100,17 +109,17 @@ h3 {
     border-radius: 3vw;
     text-align: center;
     width: 10vw;
-    max-width: 80px;
-    font-size: 1.5vw;
+    max-width: 70px;
+    font-size: 1.2vw;
     flex-direction: column;
 }
 .countdown-box span:first-child {
-    font-size: 2.5vw;
+    font-size: 2vw;
     display: block;
 }
 
 .countdown-box span:last-child {
-    font-size: 1.6vw;
+    font-size: 1.1vw;
 }
 
 .countdown-container {
@@ -155,7 +164,7 @@ h3 {
     font-size: 22px;
     cursor: pointer;
     transition: 0.3s;
-    font-family: 'Monotype Corsiva', cursive;
+    font-family: 'NewFont', sans-serif;
 }
 
 .rsvp-buttons button:hover {
@@ -213,8 +222,8 @@ h3 {
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
+    width: 90%;
+    max-width: 700px;
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 100px;
@@ -237,7 +246,7 @@ h3 {
     font-size: 22px;
     cursor: pointer;
     transition: 0.3s;
-    font-family: 'Monotype Corsiva', cursive;
+    font-family: 'NewFont', sans-serif;
 }
 
 .event-info button:hover {
@@ -317,18 +326,18 @@ h3 {
     .header-text {
         font-size: 48px;
         margin-top: 200px;
-        font-family: 'Monotype Corsiva';
+        font-family: 'NewFont', sans-serif;
     }
 
     .couple-text {
         font-size: 30px;
         margin-top: 200px;
-        font-family: 'Monotype Corsiva';
+        font-family: 'NewFont', sans-serif;
     }
 
     .date-text {
         font-size: 22px;
-        font-family: 'Monotype Corsiva';
+        font-family: 'NewFont', sans-serif;
     }
 
     .container {
@@ -349,7 +358,7 @@ h3 {
         padding: 30px 10px;
         border-radius: 30px;
         width: auto;
-        font-family: 'Monotype Corsiva';
+        font-family: 'NewFont', sans-serif;
     }
 
     .countdown-box {
@@ -377,31 +386,31 @@ h3 {
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
-        font-family: 'Monotype Corsiva';
+        font-family: 'NewFont', sans-serif;
     }
 
     .rsvp-buttons button {
         width: auto;
         font-size: 14px;
-        font-family: 'Monotype Corsiva';
+        font-family: 'NewFont', sans-serif;
     }
 
     .event-info {
         width: 90%;
         margin-top: 50px;
-        font-family: 'Monotype Corsiva';
+        font-family: 'NewFont', sans-serif;
     }
 
     .calendar {
         width: 100%;
-        font-family: 'Monotype Corsiva';
+        font-family: 'NewFont', sans-serif;
     }
 
     .calendar th,
     .calendar td {
         font-size: 18px;
         padding: 8px;
-        font-family: 'Monotype Corsiva';
+        font-family: 'NewFont', sans-serif;
     }
 }
 
@@ -410,18 +419,18 @@ h3 {
     .header-text {
         font-size: 36px;
         margin-top: 150px;
-        font-family: 'Monotype Corsiva';
+        font-family: 'NewFont', sans-serif;
     }
 
     .couple-text {
         font-size: 24px;
         margin-top: 150px;
-        font-family: 'Monotype Corsiva';
+        font-family: 'NewFont', sans-serif;
     }
 
     .date-text {
         font-size: 18px;
-        font-family: 'Monotype Corsiva';
+        font-family: 'NewFont', sans-serif;
     }
 
     .container {
@@ -435,24 +444,24 @@ h3 {
 
     .countdown {
         gap: 3vw;
-        font-family: 'Monotype Corsiva';
+        font-family: 'NewFont', sans-serif;
     }
 
     .countdown-box {
         width: 12vw;
         padding: 3vw;
         flex-direction: column;
-        font-family: 'Monotype Corsiva';
+        font-family: 'NewFont', sans-serif;
     }
 
     .countdown-box span:first-child {
         font-size: 4vw;
-        font-family: 'Monotype Corsiva';
+        font-family: 'NewFont', sans-serif;
     }
 
     .countdown-box span:last-child {
         font-size: 4vw;
-        font-family: 'Monotype Corsiva';
+        font-family: 'NewFont', sans-serif;
     }
 
     .rsvp-form {
@@ -464,30 +473,30 @@ h3 {
         flex-wrap: wrap;
         justify-content: center;
         gap: 5px;
-        font-family: 'Monotype Corsiva';
+        font-family: 'NewFont', sans-serif;
     }
 
     .event-info h2 {
         font-size: 1.5rem;
-        font-family: 'Monotype Corsiva';
+        font-family: 'NewFont', sans-serif;
     }
 
     .event-info p {
         font-size: 1rem;
-        font-family: 'Monotype Corsiva';
+        font-family: 'NewFont', sans-serif;
     }
 
     .calendar {
         width: 100%;
         max-width: 350px; /* уменьшение размера */
-        font-family: 'Monotype Corsiva';
+        font-family: 'NewFont', sans-serif;
     }
 
     .calendar th,
     .calendar td {
         padding: 8px;
         font-size: 14px;
-        font-family: 'Monotype Corsiva';
+        font-family: 'NewFont', sans-serif;
     }
 }
 
@@ -498,6 +507,6 @@ h3 {
     .calendar td {
         padding: 8px;
         font-size: 14px;
-        font-family: 'Monotype Corsiva';
+        font-family: 'NewFont', sans-serif;
     }
 }
