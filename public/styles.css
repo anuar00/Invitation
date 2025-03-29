@@ -10,9 +10,9 @@
 body {
     font-family: 'NewFont', sans-serif;
     text-align: center;
-    background: #f8f1f1;
+    background: #A9B37D;
     color: #333;
-    background-image: url('/bg2.jpg');
+
     background-size: cover;
     background-attachment: fixed;
     background-position: center center; 
@@ -160,7 +160,7 @@ h3 {
     margin-top: 10px;
 }
 .rsvp-buttons button {
-    background: #d63384;
+    background: #868A72;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -172,7 +172,7 @@ h3 {
 }
 
 .rsvp-buttons button:hover {
-    background: #c2185b;
+    background: #6a6e58;
 }
 
 .yes {
@@ -242,7 +242,7 @@ h3 {
 }
 
 .event-info button {
-    background: #d63384;
+    background: #868A72;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -254,7 +254,7 @@ h3 {
 }
 
 .event-info button:hover {
-    background: #c2185b;
+    background: #6a6e58;
 }
 
 
@@ -273,7 +273,7 @@ h3 {
 
 .calendar th {
     padding: 12px;
-    background: #f189b9;
+    background: #868A72;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -293,17 +293,17 @@ h3 {
 }
 
 .calendar td:hover {
-    background: #ffc6f7;
+    background: #d5dbb5;
     transform: scale(1.1);
 }
 
 .highlight {
-    background: #f189b9;
+    background: #868A72;
     color: #ffffff;
     font-weight: bold;
     border: none;
     border-radius: 10px;
-    box-shadow: 0 0 10px #8d4c6a;
+    box-shadow: 0 0 10px #6a6e58;
 }
 
 
