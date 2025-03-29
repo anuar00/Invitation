@@ -329,7 +329,7 @@ h3 {
 @media (max-width: 1024px) {
     body {
         background-size: 200% auto;
-        background-attachment: fixed;
+        background-attachment: local;
     }
     
     .header-text {
@@ -427,7 +427,7 @@ h3 {
 @media (max-width: 600px) {
     body {
         background-size: 388% auto;
-        background-attachment: fixed;
+        background-attachment: local;
     }
     .header-text {
         font-size: 3rem;
@@ -525,7 +525,7 @@ h3 {
 
     body {
         background-size: 388% auto;
-        background-attachment: fixed;
+        background-attachment: local;
     }
 }
 
